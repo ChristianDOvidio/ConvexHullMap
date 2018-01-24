@@ -37,10 +37,7 @@ double KDNode::distance(double _la, double _lo) {
 
 KDTree::KDTree() {
 	root = NULL;
-	//std::list<KDNode> neighbors;
 	//vector(dynamic array) of pointers to KDNodes
-
-	//std::vector<KDNode*> neighbors(0);
 	std::vector<KDNode*> neighbors;
 	std::stack<KDNode*> threePoint;
 }
@@ -49,7 +46,6 @@ KDTree::KDTree() {
 //destroys root which recursivly calls destroy on whole tree
 KDTree::~KDTree() {
 	destroy(root);
-
 }
 
 
